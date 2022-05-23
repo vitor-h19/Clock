@@ -1,0 +1,134 @@
+@font-face {font-family: 'monof'; src: url(fonts/monof.ttf);}
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'monof', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;}
+
+body {
+  background: #202225;
+}
+header{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  color: #b9bbbe;
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 30px;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+main{
+  position: relative;
+  top: 40px;
+  display: inline-flex;
+  width: 100%;
+}
+section{
+  text-align: center;
+  width: calc(100% - 80px);
+  height: 100%;
+  margin-left: 10px;
+  border-left: 2px solid #b9bbbe;
+  border-right: 2px solid #b9bbbe;
+}
+section#sunday{
+  margin-right: 10px;
+}
+section#to-do-add{
+  border-bottom: 2px solid #b9bbbe;
+}
+article{
+  position: relative;
+  text-align: left;
+  color: #b9bbbe;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 5px;
+  border-left: 1px solid #b9bbbe;
+  border-bottom: 1px solid #b9bbbe;
+}
+.add-task{
+  display: block;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+.task-values{
+  margin-top: 8px;
+  margin-left: 8px;
+  color: #b9bbbe;
+}
+#day-select{
+  height: 1.5em;
+  font-size: 20px;
+  background: #2f3136;
+  color: #b9bbbe;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 3px solid #b9bbbe;
+  outline: none;
+}
+#task-description{
+  width: 90%;
+  height: 1.5em;
+  font-size: 20px;
+  background: #2f3136;
+  color: #b9bbbe;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 3px solid #b9bbbe;
+  outline: none;
+}
+#time-input{
+  height: 1.5em;
+  font-size: 20px;
+  background: #2f3136;
+  color: #b9bbbe;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 3px solid #b9bbbe;
+  outline: none;
+}
+#btn-add{
+  cursor: pointer;
+  width: 50%;
+  height: 30px;
+  background: #b9bbbe;
+  color: #202225;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 10px #000;
+}
+#btn-add:hover{
+  background: #36393f;
+  color: #b9bbbe;
+}
+#btn-add:active{
+  box-shadow: 0px 0px 0px #000;
+}
+h1{
+  width: 100%;
+  background: #b9bbbe;
+  color: #36393f;
+  font-size: 24px;
+  padding: 3px;
+}
+h2{
+  font-size: 20px;
+  text-align: left;
+}
+h3{
+  font-size: 16px;
+  text-align: left;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202225;
+}
+::-webkit-scrollbar-thumb {
+  background: #b9bbbe;
+  border-radius: 9px;
+}
