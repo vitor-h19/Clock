@@ -1,6 +1,6 @@
 {
-  "name": "week-to-do-list-electron",
-  "productName": "week-to-do-list-electron",
+  "name": "clock-electron",
+  "productName": "clock-electron",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -14,7 +14,7 @@
   "keywords": [],
   "author": {
     "name": "vitor-h19",
-    "email": "vitorhrmatos@hotmail.com"
+    "email": "105753977+vitor-h19@users.noreply.github.com"
   },
   "license": "MIT",
   "config": {
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "week_to_do_list_electron"
+            "name": "clock_electron"
           }
         },
         {

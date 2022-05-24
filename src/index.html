@@ -1,63 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Week to do list</title>
+  <link rel="stylesheet" href="index.css" />
+  <title>Digital clock</title>
 </head>
 <body>
 
-
-  <header>Week to do list</header>
-
+  <header></header>
 
   <main>
 
-    <section id="to-do-add">
-      <h1>New Task</h1>
-      <h3 class="task-values">Day of the week:</h3>
-      <select class="add-task" name="day" id="day-select">
-        <option value="monday">Monday</option>
-        <option value="tuesday">Tuesday</option>
-        <option value="wednesday">Wednesday</option>
-        <option value="thursday">Thursday</option>
-        <option value="friday">Friday</option>
-        <option value="saturday">Saturday</option>
-        <option value="sunday">Sunday</option>
-      </select>
-      <h3 class="task-values">Task:</h3>
-      <input type="text" name="" class="add-task" id="task-description" maxlength="15">
-      <h3 class="task-values">Time:</h3>
-      <input type="time" name="time" class="add-task" id="time-input">
-      <button id="btn-add">Add task</button>
+    <section id="principal">
+
+      <div id="time-type">
+        <h1>12H</h1>
+
+        <label class="switch">
+          <input type="checkbox" name="" id="clock-type" checked>
+          <span class="slider round"></span>
+        </label>
+
+        <h1>24H</h1>
+      </div>
+
+      <article id="clock">
+        <div class="clock">
+          <span class="clock-numbers" id="hours">00</span>
+          <span class="tempo">Hours</span>
+        </div>
+
+        <div class="clock">
+          <span class="clock-numbers" id="minutes">00</span>
+          <span class="tempo">Minutes</span>
+        </div>
+
+        <div class="clock">
+          <span class="clock-numbers" id="seconds">00</span>
+          <span class="tempo">Seconds</span>
+        </div>
+
+        <div id="append">
+          <span class="append" id="session">AM</span>
+          <span class="append" id="day"></span>
+          <span class="append" id="date"></span>
+          <span class="append" id="month"></span>
+          <span class="append" id="year"></span>
+        </div>
+
+      </article>
+
     </section>
 
-    <section id="monday">
-      <h1>Monday</h1>
-    </section>
-    <section id="tuesday">
-      <h1>Tuesday</h1>
-    </section>
-    <section id="wednesday">
-      <h1>Wednesday</h1>
-    </section>
-    <section id="thursday">
-      <h1>Thursday</h1>
-    </section>
-    <section id="friday">
-      <h1>Friday</h1>
-    </section>
-    <section id="saturday">
-      <h1>Saturday</h1>
-    </section>
-    <section id="sunday">
-      <h1>Sunday</h1>
-    </section>
+    <section id="secondary"></section>
+
   </main>
-
-
-  <script src="to-do-list.js"></script>
+  <script src="clock.js"></script>
 </body>
 </html>
