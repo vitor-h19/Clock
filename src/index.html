@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+  <title>Digital clock</title>
+</head>
+<body>
+
+  <header></header>
+
+  <main>
+
+    <section id="principal">
+
+      <div id="time-type">
+        <h1>12H</h1>
+
+        <label class="switch">
+          <input type="checkbox" name="" id="clock-type" checked>
+          <span class="slider round"></span>
+        </label>
+
+        <h1>24H</h1>
+      </div>
+
+      <article id="clock">
+        <div class="clock">
+          <span class="clock-numbers" id="hours">00</span>
+          <span class="tempo">Hours</span>
+        </div>
+
+        <div class="clock">
+          <span class="clock-numbers" id="minutes">00</span>
+          <span class="tempo">Minutes</span>
+        </div>
+
+        <div class="clock">
+          <span class="clock-numbers" id="seconds">00</span>
+          <span class="tempo">Seconds</span>
+        </div>
+
+        <div id="append">
+          <span class="append" id="session">AM</span>
+          <span class="append" id="day"></span>
+          <span class="append" id="date"></span>
+          <span class="append" id="month"></span>
+          <span class="append" id="year"></span>
+        </div>
+
+      </article>
+
+    </section>
+
+    <section id="secondary"></section>
+
+  </main>
+  <script src="clock.js"></script>
+</body>
+</html>
