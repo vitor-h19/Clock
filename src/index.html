@@ -10,11 +10,18 @@
 <body>
 
   <header></header>
+  <nav>
+    <input type="search" name="search-timezones" id="search-timezones" onkeyup="getTimeZones()" placeholder="Search Time Zones">
+  </nav>
+  <p id="teste"></p>
 
   <main>
 
-    <section id="principal">
-
+    <div id="connection-header">
+      <div id="connection-status">
+        <h1>12H</h1>
+      </div>
+      
       <div id="time-type">
         <h1>12H</h1>
 
@@ -22,11 +29,16 @@
           <input type="checkbox" name="" id="clock-type" checked>
           <span class="slider round"></span>
         </label>
-
         <h1>24H</h1>
       </div>
+    </div>
+
+    <section id="principal">
+
+      
 
       <article id="clock">
+      
         <div class="clock">
           <span class="clock-numbers" id="hours">00</span>
           <span class="tempo">Hours</span>
@@ -57,6 +69,8 @@
     <section id="secondary"></section>
 
   </main>
+
+  <script src="online-clock.js"></script>
   <script src="clock.js"></script>
 </body>
 </html>
